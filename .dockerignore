@@ -1,0 +1,17 @@
+node_modules
+dist
+.angular
+.git
+.agents
+.codex
+.aws
+.env
+.env.*
+!.env.example
+references
+artifacts
+.cache
+test-results
+playwright-report
+src/app/display-name.generated.ts
+public/barrel-map.png

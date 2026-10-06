@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.angular/
+out-tsc/
+.env
+.env.*
+!.env.example
+src/app/display-name.generated.ts
+public/barrel-map.png
+test-results/
+playwright-report/
+references/
+artifacts/
+.cache/

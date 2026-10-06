@@ -1,0 +1,13 @@
+version: 1
+compose: compose.yaml
+public:
+  service: web
+  port: 80
+routing:
+  pathPrefix: false
+services: []
+technologies:
+  - name: Angular
+environment: []
+storage: []
+schedules: []

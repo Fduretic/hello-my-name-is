@@ -1,0 +1,28 @@
+{
+  "name": "hello-my-name-is",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/configure.mjs && ng serve --host 0.0.0.0",
+    "build": "node scripts/configure.mjs && ng build",
+    "test": "node --test tests/config.test.mjs tests/contract.test.mjs",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@angular/common": "21.2.25",
+    "@angular/compiler": "21.2.25",
+    "@angular/core": "21.2.25",
+    "@angular/platform-browser": "21.2.25",
+    "@fontsource/unifrakturcook": "5.3.0",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "21.2.25",
+    "@angular/cli": "21.2.25",
+    "@angular/compiler-cli": "21.2.25",
+    "@playwright/test": "1.63.0",
+    "typescript": "5.9.3",
+    "yaml": "2.8.1"
+  }
+}
