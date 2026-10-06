@@ -1,4 +1,13 @@
 @import '@fontsource/unifrakturcook/700.css';
+@import '@fontsource/rubik-spray-paint/400.css';
+@import '@fontsource/permanent-marker/400.css';
+@import '@fontsource/rubik-wet-paint/400.css';
+@import '@fontsource/sedgwick-ave-display/400.css';
+@import '@fontsource/bungee-shade/400.css';
+@import '@fontsource/rock-salt/400.css';
+@import '@fontsource/rubik-distressed/400.css';
+@import '@fontsource/lacquer/400.css';
+@import '@fontsource/nosifer/400.css';
 
 :root { color-scheme: dark; font-family: 'Courier New', monospace; background: #090a09; color: #deddd2; }
 * { box-sizing: border-box; }

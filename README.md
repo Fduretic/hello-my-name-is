@@ -2,6 +2,8 @@
 
 A single-page Angular 21.2.25 introduction inside a curved CRT. The sticker is rendered HTML, with a small generated displacement map, CSS scanlines, phosphor texture, vignette and glass reflection. The keyboard-accessible power button switches between the introduction and standby. Motion follows the visitor's reduced-motion preference.
 
+The name cycles through ten fonts in order, starting with UnifrakturCook and looping back after the tenth. A fresh random delay of 2–4 seconds follows each switch. Font faces are preloaded and the name is resized after every change. Rotation pauses while the television is off, the browser tab is hidden, or reduced motion is enabled. No additional environment variables are needed.
+
 ## Local development
 
 Use Node 22.22.0 (Node 20.19+ also works) and npm. Run `npm ci`, copy `.env.example` to `.env`, optionally set `PUBLIC_DISPLAY_NAME`, and run `npm start`. Open `http://localhost:4200`. Production output: `npm run build` → `dist/hello/browser`.
@@ -34,6 +36,6 @@ See `VERIFICATION.md` for checks actually executed and remaining deployment limi
 
 ## Fonts and design inputs
 
-UnifrakturCook Bold is self-hosted through pinned `@fontsource/unifrakturcook` 5.3.0, licensed under SIL Open Font License 1.1. Its license is included in `public/licenses/UnifrakturCook-OFL.txt`. Old English Text MT and Georgia are local fallback fonts; Arial and Courier New use the visitor's installed system fonts. No font requests go to external services.
+All ten fonts are self-hosted through pinned Fontsource 5.3.0 packages: UnifrakturCook, Rubik Spray Paint, Permanent Marker, Rubik Wet Paint, Sedgwick Ave Display, Bungee Shade, Rock Salt, Rubik Distressed, Lacquer, and Nosifer. Permanent Marker and Rock Salt use Apache License 2.0; the others use SIL Open Font License 1.1. Their license files are included in `public/licenses/`. Old English Text MT and Georgia are local fallback fonts; Arial and Courier New use the visitor's installed system fonts. No font requests go to external services.
 
-The three supplied references were downloaded and inspected as design inputs. They are not shipped in the website. The conventional HELLO header retains sans-serif typography; the name uses Old English lettering.
+The three supplied references were downloaded and inspected as design inputs. They are not shipped in the website. The conventional HELLO header retains sans-serif typography; the name alternates between Old English, graffiti, marker, and expressive display lettering.

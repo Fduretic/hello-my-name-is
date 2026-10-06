@@ -19,7 +19,7 @@ import { CRTOverlayComponent } from './crt-overlay.component';
         <div class="crt-screen">
           <div class="signal" [attr.aria-hidden]="!powered()">
             <div class="channel" aria-hidden="true">AV 1<span>STEREO</span></div>
-            <app-name-tag [name]="name()" />
+            <app-name-tag [name]="name()" [active]="powered()" />
             <span class="screen-caption" aria-hidden="true">NICE TO MEET YOU.</span>
           </div>
           <app-crt-overlay />

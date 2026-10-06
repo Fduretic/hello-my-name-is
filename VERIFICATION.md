@@ -1,6 +1,18 @@
 # Verification — 6 October 2026
 
-## Executed and passed
+## Font rotation update
+
+Added nine locally hosted, licensed font families alongside UnifrakturCook. The name rotates in sequence with a newly sampled 2000–4000 ms delay after each switch. Every change refits the text, including a corrective sizing pass for handwritten glyph overhang. Rotation pauses in standby, on hidden tabs, and when reduced motion is requested; timers and event listeners are cleaned up with the component.
+
+Verified font licenses from their installed packages and copied them into `public/licenses/`. No environment variables or deployment architecture changes were introduced.
+
+- Six configuration/contract tests passed.
+- The production image rebuilt successfully: 143.16 kB initial JS/CSS, approximately 41.08 kB transferred, plus self-hosted fonts.
+- Eleven browser checks passed against the production container, including ten-font cycling, long-name fitting at mobile width, newly selected 2/3/4-second delays, standby/reduced-motion pause and resume, and all existing page checks.
+- Real-time browser inspection confirmed the changing typefaces and the rendered sticker appearance.
+- The complete container verification passed again: internal health, HTTP security headers, isolation between two Compose projects, specified resource limits, and service recreation. Test containers and networks were cleaned up.
+
+## Initial release checks
 
 - Installed exact pinned dependencies and generated `package-lock.json`; `npm ls --depth=0` found no invalid dependencies.
 - `npm run build`: Angular production compilation passed. Final fallback bundle: 129.50 kB raw, approximately 39.09 kB transferred, plus locally served font assets.
